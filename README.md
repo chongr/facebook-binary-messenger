@@ -3,6 +3,7 @@ Copy and Paste text_to_binary.js into the chrome developer tools on Facebook and
 
 #### Constraints
 - Only reads binary in the form of 8 bits and space in between
-- translates all messages within the messenger window, this creates blank messages if not formatted as above
+- Translates all messages within the messenger window, this creates blank messages if not formatted as above
+- Currently not compatible with emojis
 - Facebook also uses react so they store what you enter into the message so you have to copy and paste the new binary message, please advise if there are ideas to get around this
 - Could have not used jquery, but yeah
