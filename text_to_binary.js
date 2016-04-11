@@ -21,6 +21,10 @@ function translate() {
   });
 }
 
+function copyToClipboard(text) {
+  window.prompt("Copy to clipboard: Ctrl+C, Enter, and then paste over your message", text);
+}
+
 function convert() {
   var output = $('._1mf > span > span');
   var input = $('._1mf > span > span').text();
@@ -30,4 +34,5 @@ function convert() {
       new_string +=input[i].charCodeAt(0).toString(2) + " ";
   }
   output.html(new_string)
+  copyToClipboard(new_string)
 }
